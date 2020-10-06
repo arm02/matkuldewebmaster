@@ -1,0 +1,154 @@
+body,html{
+    height: 100%;
+    margin:0 auto;
+}   
+
+.link{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    font-family: arial;
+} 
+.link:hover{
+    background-color: #f05b57;
+    color: #fff;
+}
+.home{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://p16-sg-default.akamaized.net/aweme/720x720/tiktok-obj/100d24dfeb4150c9e73b30c6dae23aca.jpeg);
+    background-size: cover;
+    text-align: center;
+    padding: 60px 0px;
+}
+/*heading*/
+.heading-1{
+    font-family: arial;
+    font-size: 60px;
+    color: #f05b57;
+    margin: auto;
+}
+.heading-2{
+    font-family: arial;
+    font-size: 40px;
+    color: #000;
+    margin: auto;
+}
+.heading-3{
+    font-family: arial;
+    font-size: 20px;
+    color: #000;
+    margin: auto;
+}
+
+/**Section Content**/
+.content{
+    width: 100%;
+    min-height: 400px;
+    background-color:#f8f8f8;
+    padding: 100px 0px;
+}
+
+/**content 2**/
+.content2{
+    background: #692C3E;
+    width: 100%;
+    min-height: 100%;
+    padding: 50px 0px;
+}
+.col-border{
+    min-height: 100px;
+    border: solid 1px #fff;
+    text-align: center;
+    padding:10px 0px;
+}
+
+.fadeIn {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cd-intro-content h1,
+.cd-intro-content p,
+.cd-intro-content .cd-btn {
+  opacity: 0;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.bouncy.cd-intro-content h1 {
+  animation-name: cd-bounce-right;
+}
+
+.bouncy.cd-intro-content p {
+  animation-name: cd-bounce-left;
+}
+
+.bouncy.cd-intro-content h1,
+.bouncy.cd-intro-content p {
+  animation-duration: 0.6s;
+}
+
+.bouncy.cd-intro-content .cd-btn {
+  animation-name: cd-bounce-rotate;
+  animation-duration: 0.5s;
+}
+
+.bouncy.cd-intro-content .cd-btn.main-action {
+  animation-delay: 0.4s;
+}
+
+@keyframes cd-bounce-right {
+  0% {
+    opacity: .2;
+    transform: translateX(-200px);
+  }
+  60% {
+    opacity: .7;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cd-bounce-left {
+  0% {
+    opacity: .2;
+    transform: translateX(200px);
+  }
+  60% {
+    opacity: .7;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cd-bounce-rotate {
+  0% {
+    opacity: .2;
+    transform: perspective(800px) rotateX(-80deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: perspective(800px) rotateX(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(800px) rotateX(0);
+  }
+}
